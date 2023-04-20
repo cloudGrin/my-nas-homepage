@@ -11,6 +11,25 @@ export const applicationRouter = createTRPCRouter({
       };
     }),
   getAll: publicProcedure.query(({ ctx }) => {
-    return ctx.prisma.application.findMany()
+    return ctx.prisma.applicationType.findMany({
+      orderBy: {
+        name: 'desc'
+      },
+      include: {
+        apps: {
+          orderBy: [
+            {
+              sortOrder: 'asc',
+            },
+            {
+              requireLogin: 'desc',
+            },
+            {
+              createdAt: 'desc',
+            },
+          ],
+        }
+      }
+    })
   }),
 });

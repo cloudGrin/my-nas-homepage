@@ -1,28 +1,35 @@
-# Create T3 App
+# My Nas Homepage
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+这是一个使用[create-t3-app](https://github.com/t3-oss/create-t3-app)搭建的项目，用来承载[我的群晖Nas的应用导航页](https://grin.cool)
 
-## What's next? How do I make an app with this?
-
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
-
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## 使用了哪些技术
 
 - [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
 - [tRPC](https://trpc.io)
+- [Tailwind CSS](https://tailwindcss.com)
+- [TypeScript](https://typescriptlang.org)
+- [Prisma](https://prisma.io)
+- [Planetscale](https://planetscale.com/)
 
-## Learn More
+## 一个静态页面为什么整这么复杂
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+单纯只是好奇一些新技术，例如Prisma、Planetscale和tRPC，prisma和tRPC的这种从数据库--后端接口--前端页面都有模型数据类型支撑的方案，作为同构项目真的很棒。
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+## 部署
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+使用Planetscale作为在线数据库，Vercel用来部署Nextjs项目，Cloudflare做DNS加速，都是免费的方案。唯一就是域名花一点钱。有兴趣的可以参照我的[这篇博客](https://blog.grin.cool/p/8585)，只不过把其中的Netlify部分换成Vercel网站的用法就可以了。
 
-## How do I deploy this?
+## 开发
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+```bash
+pnpm install
+pnpm prisma generate
+```
+
+修改根目录.env文件的DATABASE_URL
+
+```bash
+pnpm db:push
+pnpm db:seed
+pnpm dev
+```

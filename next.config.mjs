@@ -18,5 +18,15 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'q.210313.cn',
+        port: '2200',
+        pathname: '/**',
+      },
+    ],
+  },
 };
 export default config;
