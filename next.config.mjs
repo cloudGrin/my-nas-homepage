@@ -22,8 +22,8 @@ const config = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'q.210313.cn',
-        port: '2200',
+        hostname: 'cloudgrin.oss-cn-shanghai.aliyuncs.com',
+        port: '',
         pathname: '/**',
       },
     ],
