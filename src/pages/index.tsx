@@ -52,9 +52,9 @@ const Home: NextPage = () => {
           htmlFor="qieh"
         ></label>
       </div>
-      <main className="absolute bottom-0 left-0 right-0 top-0 flex justify-center">
-        <div className="container mt-28 flex justify-center px-4 lg:mt-36">
-          <div className="grid auto-rows-min grid-cols-4 gap-x-1 gap-y-1 md:gap-x-12 md:gap-y-16 lg:grid-cols-5 xl:grid-cols-6">
+      <main className="absolute top-0 bottom-0 left-0 right-0 flex justify-center">
+        <div className="container flex justify-center px-4 mt-28 lg:mt-36">
+          <div className="grid grid-cols-4 auto-rows-min gap-x-1 gap-y-1 md:gap-x-12 md:gap-y-16 lg:grid-cols-5 xl:grid-cols-6">
             {data[activeIndex]?.apps.map((app) => (
               <Link href={app.url} key={app.id} target="_blank">
                 <div className="relative">
@@ -64,9 +64,9 @@ const Home: NextPage = () => {
                       alt={app.name}
                       width="128"
                       height="128"
-                      className="h-20 w-20 hover:animate-shake_bounce sm:h-32 sm:w-32"
+                      className="w-20 h-20 hover:animate-shake_bounce sm:h-32 sm:w-32"
                     />
-                    <figcaption className="text-center text-xs md:text-sm text-white shadow-black drop-shadow-lg">
+                    <figcaption className="text-xs text-center text-white md:text-sm shadow-black drop-shadow-lg">
                       {app.name}
                     </figcaption>
                   </figure>
@@ -76,7 +76,7 @@ const Home: NextPage = () => {
                       alt=""
                       width="20"
                       height="20"
-                      className="absolute right-1 top-1 h-5 w-5"
+                      className="absolute w-5 h-5 right-1 top-1"
                     />
                   )}
                 </div>

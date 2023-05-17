@@ -11,6 +11,7 @@ datasource db {
 model Application {
   id           Int             @id @default(autoincrement())
   name         String
+  path         String?
   url          String
   logo         String
   requireLogin Boolean         @default(false)
@@ -22,6 +23,7 @@ model Application {
 
   @@unique([name, typeId])
   @@index([typeId])
+  @@index([path])
 }
 
 model ApplicationType {

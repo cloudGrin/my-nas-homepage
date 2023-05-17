@@ -11,6 +11,7 @@ async function main() {
                 create: [
                     {
                         name: "群辉",
+                        path: "nas",
                         url: "http://192.168.31.6:5000/",
                         logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/synology_1.png",
                         requireLogin: true,
@@ -18,6 +19,7 @@ async function main() {
                     },
                     {
                         name: "群晖文件夹",
+                        path: "folder",
                         url: "http://192.168.31.6:18502/",
                         logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/finder.png",
                         requireLogin: true,
@@ -25,6 +27,7 @@ async function main() {
                     },
                     {
                         name: "ChatGpt",
+                        path: "gpt",
                         url: "http://192.168.31.6:12356/",
                         logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/chatgpt_1.png",
                         requireLogin: true,
@@ -32,6 +35,7 @@ async function main() {
                     },
                     {
                         name: "相册",
+                        path: "photo",
                         url: "http://192.168.31.6:21065/",
                         logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/tupian_1.png",
                         requireLogin: true,
@@ -39,6 +43,7 @@ async function main() {
                     },
                     {
                         name: "Office",
+                        path: "office",
                         url: "http://192.168.31.6:16502/",
                         logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/driver.png",
                         requireLogin: true,
@@ -46,6 +51,7 @@ async function main() {
                     },
                     {
                         name: "我的云盘",
+                        path: "cloud",
                         url: "http://192.168.31.6:2199/index.php?dir=/var",
                         logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/yunpan_1.png",
                         requireLogin: false,
@@ -53,6 +59,7 @@ async function main() {
                     },
                     {
                         name: "云盘管理",
+                        path: "cloud-manage",
                         url: "http://192.168.31.6:1898/",
                         logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/iCloud-Drive_1.png",
                         requireLogin: true,
@@ -60,6 +67,7 @@ async function main() {
                     },
                     {
                         name: "电子书",
+                        path: "book",
                         url: "http://192.168.31.6:25083/",
                         logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/ibook_1.png",
                         requireLogin: false,
@@ -67,6 +75,7 @@ async function main() {
                     },
                     {
                         name: "家庭影院",
+                        path: "movie",
                         url: "http://192.168.31.6:8096/",
                         logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/Videos_1.png",
                         requireLogin: true,
@@ -74,6 +83,7 @@ async function main() {
                     },
                     {
                         name: "画图",
+                        path: "draw",
                         url: "http://192.168.31.6:18080/?lang=zh&offline=1",
                         logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/drawio_1.png",
                         requireLogin: false,
@@ -81,6 +91,7 @@ async function main() {
                     },
                     {
                         name: "爱快",
+                        path: "ikuai",
                         url: "http://192.168.31.1/",
                         logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/Internet_1.png",
                         requireLogin: true,
@@ -88,6 +99,7 @@ async function main() {
                     },
                     {
                         name: "Openwrt",
+                        path: "openwrt",
                         url: "http://192.168.31.2/",
                         logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/openwrt_1.png",
                         requireLogin: true,
@@ -95,6 +107,7 @@ async function main() {
                     },
                     {
                         name: "Aria2下载",
+                        path: "aria2",
                         url: "http://192.168.31.6:10000/",
                         logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/Transmission_1.png",
                         requireLogin: false,
@@ -102,6 +115,7 @@ async function main() {
                     },
                     {
                         name: "Esxi虚拟机",
+                        path: "esxi",
                         url: "http://192.168.31.3/",
                         logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/esxi_1.png",
                         requireLogin: true,
@@ -121,6 +135,7 @@ async function main() {
                 create: [
                     {
                         name: "我的博客",
+                        path: "blog",
                         url: "https://blog.grin.cool/",
                         logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/AppStore_1.png",
                         requireLogin: false,
@@ -128,6 +143,7 @@ async function main() {
                     },
                     {
                         name: "ChatGpt",
+                        path: "gpt",
                         url: "https://q.210313.cn:12357/",
                         logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/chatgpt_1.png",
                         requireLogin: true,
@@ -135,6 +151,7 @@ async function main() {
                     },
                     {
                         name: "相册",
+                        path: "photo",
                         url: "https://q.210313.cn:21066/",
                         logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/tupian_1.png",
                         requireLogin: true,
@@ -142,6 +159,7 @@ async function main() {
                     },
                     {
                         name: "我的云盘",
+                        path: "cloud",
                         url: "https://q.210313.cn:2200/index.php?dir=/var",
                         logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/yunpan_1.png",
                         requireLogin: false,
@@ -149,6 +167,7 @@ async function main() {
                     },
                     {
                         name: "家庭影院",
+                        path: "movie",
                         url: "https://q.210313.cn:8096/",
                         logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/Videos_1.png",
                         requireLogin: true,
@@ -156,6 +175,7 @@ async function main() {
                     },
                     {
                         name: "电子书",
+                        path: "book",
                         url: "https://q.210313.cn:5188/",
                         logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/ibook_1.png",
                         requireLogin: false,
@@ -163,6 +183,7 @@ async function main() {
                     },
                     {
                         name: "群晖文件夹",
+                        path: "folder",
                         url: "https://q.210313.cn:18502/",
                         logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/finder.png",
                         requireLogin: true,
@@ -170,6 +191,7 @@ async function main() {
                     },
                     {
                         name: "Office",
+                        path: "office",
                         url: "https://q.210313.cn:16502/",
                         logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/driver.png",
                         requireLogin: true,
@@ -177,6 +199,7 @@ async function main() {
                     },
                     {
                         name: "云盘管理",
+                        path: "cloud-manage",
                         url: "https://q.210313.cn:1899/",
                         logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/iCloud-Drive_1.png",
                         requireLogin: true,
@@ -184,6 +207,7 @@ async function main() {
                     },
                     {
                         name: "画图",
+                        path: "draw",
                         url: "https://q.210313.cn:18081/?lang=zh&offline=1",
                         logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/drawio_1.png",
                         requireLogin: false,
