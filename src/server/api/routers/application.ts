@@ -5,7 +5,7 @@ import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
 export const applicationRouter = createTRPCRouter({
   hello: publicProcedure
     // .input(z.object({ text: z.string() }))
-    .query(({ input }) => {
+    .query(({ input: _input }) => {
       return {
         greeting: `Hello`,
       };
@@ -13,23 +13,23 @@ export const applicationRouter = createTRPCRouter({
   getAll: publicProcedure.query(({ ctx }) => {
     return ctx.prisma.applicationType.findMany({
       orderBy: {
-        name: 'desc'
+        name: "desc",
       },
       include: {
         apps: {
           orderBy: [
             {
-              sortOrder: 'asc',
+              sortOrder: "asc",
             },
             {
-              requireLogin: 'desc',
+              requireLogin: "desc",
             },
             {
-              createdAt: 'desc',
+              createdAt: "desc",
             },
           ],
-        }
-      }
-    })
+        },
+      },
+    });
   }),
 });

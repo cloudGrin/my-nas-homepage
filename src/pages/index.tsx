@@ -52,9 +52,8 @@ const Home: NextPage = () => {
           htmlFor="qieh"
         ></label>
       </div>
-      <main className="absolute top-0 bottom-0 left-0 right-0 flex justify-center">
-        <div className="container flex justify-center px-4 mt-28 lg:mt-36">
-          <div className="grid grid-cols-4 auto-rows-min gap-x-1 gap-y-1 md:gap-x-12 md:gap-y-16 lg:grid-cols-5 xl:grid-cols-6">
+      <main className="flex justify-center mt-28 lg:mt-60">
+          <div className="container grid gap-4 grid-cols-[repeat(auto-fill,_minmax(5rem,_1fr))] sm:grid-cols-[repeat(auto-fill,_minmax(8rem,_1fr))]">
             {data[activeIndex]?.apps.map((app) => (
               <Link href={app.url} key={app.id} target="_blank">
                 <div className="relative">
@@ -76,13 +75,12 @@ const Home: NextPage = () => {
                       alt=""
                       width="20"
                       height="20"
-                      className="absolute w-5 h-5 right-1 top-1"
+                      className="absolute w-5 h-5 sm:w-8 sm:h-8 left-16 top-1 sm:left-[6.5rem]  sm:top-2"
                     />
                   )}
                 </div>
               </Link>
             ))}
-          </div>
         </div>
       </main>
     </>
