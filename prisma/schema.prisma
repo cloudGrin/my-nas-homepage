@@ -18,8 +18,9 @@ model Application {
   sortOrder    Int             @default(1)
   createdAt    DateTime        @default(now())
   updatedAt    DateTime        @updatedAt
-  type         ApplicationType @relation(fields: [typeId], references: [id])
   typeId       Int
+  type         ApplicationType @relation(fields: [typeId], references: [id])
+  active       Boolean         @default(true)
 
   @@unique([name, typeId])
   @@index([typeId])

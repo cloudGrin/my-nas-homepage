@@ -17,7 +17,7 @@
 
 ## 部署
 
-使用Planetscale作为在线数据库，Vercel用来部署Nextjs项目，Cloudflare做DNS加速，都是免费的方案。唯一就是域名花一点钱。有兴趣的可以参照我的[这篇博客](https://blog.grin.cool/p/8585)，只不过把其中的Netlify部分换成Vercel网站的用法就可以了。
+使用Planetscale作为在线数据库，Vercel用来部署Nextjs项目，Cloudflare做DNS加速，都是免费的方案。唯一就是域名花一点钱。有兴趣的可以参照我的[这篇博客](https://blog.grin.cool/blog/hexo-blog)，只不过把其中的Netlify部分换成Vercel网站的用法就可以了。
 
 ## 开发
 

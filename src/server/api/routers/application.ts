@@ -17,6 +17,9 @@ export const applicationRouter = createTRPCRouter({
       },
       include: {
         apps: {
+          where:{
+            active: true
+          },
           orderBy: [
             {
               sortOrder: "asc",
