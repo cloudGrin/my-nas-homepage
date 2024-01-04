@@ -100,7 +100,7 @@ async function main() {
                     {
                         name: "Openwrt",
                         path: "openwrt",
-                        url: "http://192.168.31.2/",
+                        url: "http://192.168.31.8/",
                         logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/openwrt_1.png",
                         requireLogin: true,
                         sortOrder: 100
@@ -120,6 +120,46 @@ async function main() {
                         logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/esxi_1.png",
                         requireLogin: true,
                         sortOrder: 120
+                    },
+                    {
+                        name: "HomeAssistant",
+                        path: "ha",
+                        url: "http://192.168.31.6:8123/",
+                        logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/ha.png",
+                        requireLogin: true,
+                        sortOrder: 130
+                    },
+                    {
+                        name: "n8n",
+                        path: "n8n",
+                        url: "http://192.168.31.6:9518/",
+                        logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/n8n.png",
+                        requireLogin: true,
+                        sortOrder: 140
+                    },
+                    {
+                        name: "ChineseSubFinder",
+                        path: "sub",
+                        url: "http://192.168.31.6:19035/",
+                        logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/sub.png",
+                        requireLogin: true,
+                        sortOrder: 150
+                    },
+                    {
+                        name: "Alist",
+                        path: "alist",
+                        url: "http://192.168.31.6:15244/",
+                        logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/alist.png",
+                        requireLogin: true,
+                        sortOrder: 160
+                    },
+                    {
+                        name: "QingLong",
+                        path: "qinglong",
+                        url: "http://192.168.31.6:16100/",
+                        logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/qinglong.png",
+                        requireLogin: true,
+                        sortOrder: 170
                     },
 
                 ],
