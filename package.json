@@ -13,15 +13,9 @@
   },
   "dependencies": {
     "@prisma/client": "^5.7.1",
-    "@tanstack/react-query": "^4.36.1",
-    "@trpc/client": "^10.45.0",
-    "@trpc/next": "^10.45.0",
-    "@trpc/react-query": "^10.45.0",
-    "@trpc/server": "^10.45.0",
     "next": "^14.0.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "superjson": "2.2.1",
     "zod": "^3.22.4"
   },
   "devDependencies": {
@@ -35,16 +29,13 @@
     "autoprefixer": "^10.4.16",
     "eslint": "^8.56.0",
     "eslint-config-next": "^14.0.4",
-    "postcss": "^8.4.32",
+    "postcss": "^8.4.33",
     "prettier": "^3.1.1",
     "prettier-plugin-tailwindcss": "^0.5.10",
     "prisma": "^5.7.1",
     "tailwindcss": "^3.4.0",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3"
-  },
-  "ct3aMetadata": {
-    "initVersion": "7.11.0"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"

@@ -42,8 +42,8 @@ async function main() {
                         sortOrder: 30
                     },
                     {
-                        name: "Office",
-                        path: "office",
+                        name: "Driver",
+                        path: "driver",
                         url: "http://192.168.31.6:16502/",
                         logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/driver.png",
                         requireLogin: true,
@@ -230,8 +230,8 @@ async function main() {
                         sortOrder: 70
                     },
                     {
-                        name: "Office",
-                        path: "office",
+                        name: "Driver",
+                        path: "driver",
                         url: "https://q.210313.cn:16502/",
                         logo: "https://cloudgrin.oss-cn-shanghai.aliyuncs.com/images/dashborad/driver.png",
                         requireLogin: true,
